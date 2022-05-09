@@ -1,0 +1,22 @@
+import numpy as np
+x = 197
+y = 114
+z = 129
+
+L = []
+L2 = []
+L.append(x)
+L.append(y)
+L.append(z)
+for i in L: # checking each value in list
+    if i%2 != 0:
+        L2.append(i) #add odds to second list
+    else:
+        pass
+L2.sort() #sort values least to greatest
+
+if L2 == []: #if no odds
+    print('there are no odds')
+
+else:
+    print(f'{L2[-1]} is the largest odd') #calling last value of list, as that is the highest after sorting
